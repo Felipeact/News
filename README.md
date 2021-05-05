@@ -8,7 +8,7 @@
   <img alt="lastcommit" src="https://img.shields.io/github/last-commit/felipeact/News?color=%235761C3" />
   <img alt="License" src="https://img.shields.io/github/license/felipeact/News?color=%235E69D7" />
   <img alt="Issues" src="https://img.shields.io/github/issues/felipeact/News?color=%235965E0">
-  <a href="mailto:bfeitoza634cyt@gmail.com">
+  <a href="mailto:felipetiburcioviana@gmail.com">
    <img alt="E-mail" src="https://img.shields.io/badge/-felipetiburcioviana%40gmail.com-%23525DCB" />
   </a>
 </p>
