@@ -17,15 +17,13 @@
   📰 News is a blog where you can stay on top of the latest news.
 </p>
 
-<p align="center">Project developed during the <strong>Chapter III</strong> of Ignite | <a href="https://rocketseat.com.br/">Rocketseat</a></p>
-
 <hr />
 
 <p align="center">In this project, I learned very important concepts from Next.js, like Server Side Rendering, Static Site Generation, API Routes, integration with Stripe, an internet payment infrastructure, webhooks with Stripe, data persistence in FaunaDB, a non-relational database focused on serverless, authentication with GitHub using Next Auth and best practices in css using Sass.
 </p>
 
 <div align="center">
-  <sub> Made with 💖 by
+  <sub> Made with by
     <a href="https://github.com/felipeact">Felipe Viana 
   </sub>
 </div>
@@ -95,4 +93,4 @@ This project follows the Angular Convention commits pattern. [Click](./commitlin
 # :page_facing_up: License
 
 This project is under the [MIT License](./LICENSE) |
-Made with 💖 by [Felipe Viana](https://www.linkedin.com/in/felipe-viana/).
+Made with by [Felipe Viana](https://www.linkedin.com/in/felipe-viana/).
