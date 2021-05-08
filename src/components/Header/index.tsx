@@ -1,18 +1,20 @@
 import { SignInButton } from '../SignInButton'
 import { ActiveLink } from '../ActiveLink'
 
-import styles from './styles.module.scss'
+import { Container } from './styles'
 
 export function Header(){
   return(
-    <header className={styles.headerContainer}>
-      <div className={styles.headerContent}>
+    <Container className="headerContainer">
+
+    <header >
+      <div className="headerContent">
         <p>News</p>
         <nav>
-          <ActiveLink href="/" activeClassName={styles.active}>
+          <ActiveLink href="/" activeClassName="active">
             <a>Home</a>
           </ActiveLink>
-          <ActiveLink href="/posts" activeClassName={styles.active}>
+          <ActiveLink href="/posts" activeClassName="active">
             <a >Posts</a>
           </ActiveLink>
         </nav>
@@ -20,5 +22,6 @@ export function Header(){
         <SignInButton />
       </div>
     </header>
+    </Container>
   )
 }

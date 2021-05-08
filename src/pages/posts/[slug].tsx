@@ -5,7 +5,7 @@ import { RichText } from "prismic-dom"
 
 import { getPrismicClient } from "../../services/prismic"
 
-import styles from './post.module.scss'
+import { Container } from './post'
 
 interface PostProps {
   post: {
@@ -18,21 +18,21 @@ interface PostProps {
 
 export default function Post( { post }: PostProps ){
   return (
-    <>  
+    <Container>  
       <Head>
         <title>{post.title} | Ignews </title>
       </Head>
 
-      <main className={styles.container}>
-        <article className={styles.post}>
+      <main className="container">
+        <article className="post">
           <h1>{post.title}</h1>
           <time>{post.updatedAt}</time>
           <div 
-          className={styles.postContent}
+          className="postContent"
           dangerouslySetInnerHTML ={{ __html: post.content }} />
         </article>
       </main>
-    </>
+    </Container>
   )
 }
 

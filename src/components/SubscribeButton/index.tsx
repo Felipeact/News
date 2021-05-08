@@ -3,7 +3,8 @@ import { signIn, useSession } from 'next-auth/client'
 import { useRouter } from 'next/dist/client/router';
 import { api } from '../../services/api';
 import { getStripeJs } from '../../services/stripe-js';
-import styles from './styles.module.scss'
+
+import { Button } from './styles'
 
 interface SubscribeButtonProps {
   priceId: string;
@@ -39,8 +40,8 @@ export function SubscribeButton({ priceId}: SubscribeButtonProps){
   }
 
   return (
-    <button type="button" className={styles.subscribeButton} onClick={handleSubsribe}>
+    <Button type="button" onClick={handleSubsribe}>
       Subscribe Now
-    </button>
+    </Button>
   )
 }

@@ -3,7 +3,7 @@ import Head from 'next/head'
 import { SubscribeButton } from '../components/SubscribeButton';
 import { stripe } from '../services/stripe';
 
-import styles from './home.module.scss';
+import { Container } from './home';
 
 interface HomeProps {
   product: {
@@ -16,13 +16,13 @@ export default function Home({product}: HomeProps) {
 
 
   return (
-    <>
+    <Container>
       <Head>
         <title>News</title>
       </Head>
 
-    <main className={styles.contentContainer}>
-      <section className={styles.hero}>
+    <main className="contentContainer">
+      <section className="hero">
         <span>Hey, Welcome</span>
         <h1> News about the <span>React</span>world.</h1>
         <p>
@@ -34,7 +34,7 @@ export default function Home({product}: HomeProps) {
 
       <img src="/images/avatar.svg" alt=""/>
     </main>
-   </>
+   </Container>
   )
 }
 

@@ -1,6 +1,9 @@
-.headerContainer {
+import styled from 'styled-components';
+
+export const Container = styled.div`
   height: 5rem;
   border-bottom: 1px solid var(--gray-800);
+  .headerContainer {
   
 }
 
@@ -63,3 +66,7 @@
     margin-left: auto;
   }
 }
+`;
+
+
+
