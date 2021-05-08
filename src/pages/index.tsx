@@ -24,7 +24,7 @@ export default function Home({product}: HomeProps) {
     <main className="contentContainer">
       <section className="hero">
         <span>Hey, Welcome</span>
-        <h1> News about the <span>React</span>world.</h1>
+        <h1> News about the <span>World</span></h1>
         <p>
           Get access to all the publication <br />
           <span>for {product.amount} month</span>

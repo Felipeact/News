@@ -2,14 +2,26 @@ import { SignInButton } from '../SignInButton'
 import { ActiveLink } from '../ActiveLink'
 
 import { Container } from './styles'
+import { ThemeName } from '../../styles/theme'
 
-export function Header(){
+
+interface Props {
+  themeName: ThemeName;
+  setThemeName: (newName: ThemeName) => void;
+}
+
+export function Header({ themeName, setThemeName }: Props ){
+  
+  function toogleTheme(){
+    setThemeName(themeName === "dark" ? 'light' : 'dark')    
+  }
+
   return(
     <Container className="headerContainer">
 
     <header >
       <div className="headerContent">
-        <p>News</p>
+        <p onClick={toogleTheme}>News</p>
         <nav>
           <ActiveLink href="/" activeClassName="active">
             <a>Home</a>
