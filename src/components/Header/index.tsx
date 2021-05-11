@@ -1,3 +1,5 @@
+import DarkModeToggle from "react-dark-mode-toggle";
+
 import { SignInButton } from '../SignInButton'
 import { ActiveLink } from '../ActiveLink'
 
@@ -13,7 +15,17 @@ interface Props {
 export function Header({ themeName, setThemeName }: Props ){
   
   function toogleTheme(){
-    setThemeName(themeName === "dark" ? 'light' : 'dark')    
+    setThemeName(themeName === "dark" ? 'light' : 'dark') 
+    
+    
+  }
+
+  function theme() {
+    if ( themeName === 'light') {
+      return false 
+    } else {
+      return true 
+    }
   }
 
   return(
@@ -21,7 +33,7 @@ export function Header({ themeName, setThemeName }: Props ){
 
     <header >
       <div className="headerContent">
-        <p onClick={toogleTheme}>News</p>
+        <p>News</p>
         <nav>
           <ActiveLink href="/" activeClassName="active">
             <a>Home</a>
@@ -32,6 +44,8 @@ export function Header({ themeName, setThemeName }: Props ){
         </nav>
 
         <SignInButton />
+
+        <DarkModeToggle onChange={toogleTheme} checked={theme()} className='DarkModeToggle' />
       </div>
     </header>
     </Container>

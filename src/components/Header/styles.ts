@@ -60,13 +60,15 @@ export const Container = styled.div`
         background: var(--yellow-500);
       }
     }
+
+    
   }
 
   button {
     margin-left: auto;
+    /* margin-right: 1.665rem; */
   }
+
 }
 `;
-
-
 
