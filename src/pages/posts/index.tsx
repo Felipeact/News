@@ -6,7 +6,7 @@ import { RichText } from 'prismic-dom'
 import Link from 'next/link';
 
 
-import { Container } from './styles'
+import { Container } from '../../styles/styles'
 
 type Post = {
   slug: string,

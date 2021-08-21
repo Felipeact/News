@@ -8,7 +8,7 @@ import { useEffect } from "react"
 
 import { getPrismicClient } from "../../../services/prismic"
 
-import { Container } from '../post'
+import { Container } from '../../../styles/post'
 
 interface PostPreviewProps {
   post: {

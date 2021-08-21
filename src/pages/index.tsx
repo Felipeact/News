@@ -3,7 +3,7 @@ import Head from 'next/head'
 import { SubscribeButton } from '../components/SubscribeButton';
 import { stripe } from '../services/stripe';
 
-import { Container } from './home';
+import { Container } from '../styles/home';
 
 interface HomeProps {
   product: {

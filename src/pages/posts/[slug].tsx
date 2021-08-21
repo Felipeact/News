@@ -5,7 +5,7 @@ import { RichText } from "prismic-dom"
 
 import { getPrismicClient } from "../../services/prismic"
 
-import { Container } from './post'
+import { Container } from '../../styles/post'
 
 interface PostProps {
   post: {
